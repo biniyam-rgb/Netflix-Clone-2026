@@ -1,0 +1,73 @@
+/* Full Netflix-Style Footer CSS */
+
+.footer_outer_container {
+  background-color: #111;      /* Dark background like Netflix */
+  color: #757575;              /* Footer text color */
+  padding: 40px 20px;
+  font-family: 'Lexend', sans-serif;
+}
+
+.footer_inner_container {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Social icons section */
+.footer_icons {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.footer_icons svg {
+  color: #757575;
+  font-size: 28px;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.footer_icons svg:hover {
+  color: #e50914;  /* Netflix red on hover */
+}
+
+/* Footer links section */
+.footer_data {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 20px;
+}
+
+.footer_data div ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer_data div ul li {
+  font-size: 14px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  transition: text-decoration 0.3s, color 0.3s;
+}
+
+.footer_data div ul li:hover {
+  text-decoration: underline;
+  color: #ffffff;
+}
+
+/* Responsive for small screens */
+@media (max-width: 600px) {
+  .footer_data {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .footer_icons {
+    gap: 15px;
+  }
+}

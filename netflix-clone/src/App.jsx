@@ -1,10 +1,11 @@
 import React from 'react'
-import First from './Component/first'
+import Home from './Page/Home/Home'
+
 
 export default function App() {
   return (
     <div>
-      <First/>
+      <Home/>
     </div>
   )
 }
